@@ -1,0 +1,347 @@
+:root{
+	--pink:#EF3C82;
+	--white:white;
+	--black:black;
+	--colorMenu:#196E58;
+	--colorCheck:;
+	--colorAnun:#4E2580;
+}
+*{
+	font-family: 'Monserrat',sans-serif;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+
+}
+html{
+	height: 100%;
+}
+body{
+	display:flex;
+	flex-direction:column;
+	min-height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+}
+/*
+	Menu con logos
+*/
+.menu{
+	background: var(--colorMenu);
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.menu #unsxxLogo img{
+	width: 120px;
+	padding: 10px;
+}
+.menu #inforLogo img{
+	width: 190px;
+	height: 140px;
+	padding: 20px;
+}
+.menu #unsxxLogo{
+	float: left;
+}
+.menu #inforLogo{
+	float: right;
+}
+.menu #cabecera {
+	background: var(--colorMenu);
+	display: inline-block;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.test-anun {
+	font-size: 20px;
+	line-height: 2rem;
+	text-align: center;
+}
+.test-anun span{
+	color:var(--colorAnun);
+	font-size: 30px; 
+}
+/*probadndo errores
+*/
+.btn-container{
+	padding-top: 30px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+}
+.btn-ghost{
+	position: relative;
+	display: inline-block;
+	border: 2px solid var(--colorMenu);
+	padding: 20px;
+	color:var(--white);
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: var(--colorMenu);
+	transition:color 0.8s,background 0.8s;
+}
+.btn-ghost.round{
+	border-radius: 30px;
+	cursor: pointer;
+}
+.btn-ghost:hover{
+	color: var(--black);
+	background-color: transparent;
+}
+.btn-ghost:active{
+	box-shadow: inset 0 0 20px var(--colorMenu);
+}
+
+.test-anun{
+	margin-right: 2%;
+	margin-left: 2%;
+}
+#compatible .results .main-container #comp-center {
+	font-size: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+  	padding-top: 25px;
+}
+#compatible .results .main-container h2{
+	text-align: center;
+	font-size: 30px;
+}
+#nocompatible .results .main-container #comp-center {
+	font-size: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+  	padding-top: 25px;
+}
+#nocompatible .results .main-container h2{
+	text-align: center;
+	font-size: 30px;
+}
+.disclaimer {
+  border-radius: 12px;
+  border: 1px solid cornflowerblue;
+}
+/*
+	Formulario
+*/
+#test{
+	width: 100%;
+}
+form{
+	background-color: white;
+	border-radius: 3px;
+	color: #000;
+	font-size: 0.8em;
+	padding: 20px;
+	margin: 0 auto;
+	width: 600px;
+}
+.formulario p{
+	font-size: 20px;
+}
+.formulario #title-form{
+	display: flex;
+	justify-content: center;
+}
+.formulario #tit-test{
+	font-size: 25px;
+}
+.formulario #ob-test{
+	color: red;
+}
+.formulario h2{
+	text-align: center;
+}
+.formulario > div{
+	padding:25px 0;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+.formulario input[type="radio"]{
+	display: none;
+}
+.formulario .radio label{
+	color:var(--colorMenu);
+	background-color: rgba(0,0,0,.1);
+	padding: 20px 30px 20px 55px;
+	display: inline-block;
+	position: relative;
+	font-size: 2em;
+	border-radius: 30px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.formulario .radio label:hover{
+	background: rgba(0,116,217,0.2);
+}
+.formulario .radio label:before{
+	content:"";
+	width:25px;
+	height: 25px;
+	display: inline-block;
+	background: none;
+	border: 3px solid var(--colorMenu);
+	border-radius: 50%;
+	position: absolute;
+	left: 17px;
+	top: 18px;
+}
+.formulario input[type="radio"]:checked + label{
+	padding: 20px 30px;
+	background: var(--colorMenu);
+	border-radius: 30px;
+	color:#fff;
+}
+.formulario input[type="radio"]:checked + label:before{
+	display: none;
+}
+
+.field{
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+.field:focus{
+	border-color: var(--colorMenu);
+}
+
+.center-content{
+	text-align: center;
+}
+
+
+/*
+	Redes Sociales
+*/
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?77843367');
+      src: url('../font/fontello.eot?77843367#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff?77843367') format('woff'),
+           url('../font/fontello.ttf?77843367') format('truetype'),
+           url('../font/fontello.svg?77843367#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+ .demo-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: never;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+    .container {
+    	width: 100%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	padding: 10px ;
+    }
+    .container .row a{
+    	font-size: 30px;
+    	text-decoration: none;
+    }
+    .container .row .github, .facebook, .whatsapp{
+    	margin: 0 auto;
+    	border: 10px;
+   		border-radius: 	50%;
+ 	}
+    .container .row .github{
+ 		background: black;
+ 		color: white;
+ 		padding: 5px;
+    }
+ 
+    .container .row .facebook{
+    	background: #1877F2;
+    	padding: 5px;
+ 		color: white;
+    }
+    .container .row .whatsapp{
+    	 background: #45C554;
+ 		color: white;
+ 		padding: 5px;    
+ 	}
+/*
+	Resposive
+*/
+@media (max-width: 480px){
+	.menu #unsxxLogo img{
+		width: 0;
+	}
+	.menu #inforLogo img{
+		width: 0;
+	}
+	.menu #cabecera {
+		font-size: 15px;
+	}
+	form{
+	width: 100%;
+	}
+	.main-container{
+		width: 100%;
+		padding: 15px;
+	}
+	#compatible .results .main-container ul{
+		font-size: 25px;
+	}
+}
+@media (max-width: 768px){
+	.menu #unsxxLogo img{
+		width: 0;
+	}
+	.menu #inforLogo img{
+		width: 0;
+	}
+	.menu #cabecera {
+		font-size: 15px;
+	}
+	.main-container{
+		width: 100%;
+		padding: 15px;
+	}
+	.main-container p{
+		font-size: 25px;
+	}
+}
+@media (max-width:1036px){
+
+	.menu #cabecera {
+		width: 50%;
+		font-size: 15px;
+	}
+} 

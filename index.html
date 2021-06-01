@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+         <meta name=theme-color content="#196E58"/>
+        <meta name=robots content="index, follow">
+        <meta name=viewport content="width=device-width, initial-scale=1"/>
+        <meta http-equiv=Cache-control content=public>
+        <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+        <title>Autoevaluacion - Covid-19 | #QuedateEnCasa</title>
+        <meta name=title content="Autoevaluacion - Covid-19"/>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animation.css">
+        <script type="text/javascript" src="js/test.js"></script>
+            <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+      
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+    </head>
+<body>
+    
+    <div class="menu">
+        <div id="unsxxLogo">
+            <img src="img/logo-unsxx.png">
+        </div>  
+        <div id="cabecera">
+            <h1>
+                Autoevaluacion
+             <hr>Coronavirus, COVID-19
+            </h1>
+        </div>   
+        <div id="inforLogo">
+            <img src="img/logo-infor.png">
+        </div>
+    </div>
+  
+<div class="pagina-1" id="inicio" >
+
+       <div style="text-align:center;background-color:white;color:black">
+        <div class=container-fluid>
+            <br/>
+            <div class="test-anun">
+                <br/>
+                <span>
+                    <b>Haz el siguiente test de autoevaluación para el COVID-19 (no oficial)</b>    
+                </span>
+                <br/>
+                <b>Para descongestionar los servicios de emergencia</b>
+                ,esta aplicación no sustituye ni pretende sustituir, en ningún caso, el
+                consejo de un profesional médico. Si crees que tienes síntomas
+                compatibles con el COVID-19 ponte en contacto con el teléfono
+                correspondiente a tu Comunidad o con el de tu centro de salud.
+            <br/>
+            </div>
+
+            <br/>
+            <br/>
+
+   <section class="btn-container ">
+        <a class="btn-ghost round" onclick="muestra_test('test')" >Empiesa Test Ahora</a>
+    </section>
+
+            <br/>
+            <br/>
+            <br/>
+            <div style="text-align:center;">
+                <b>Comparte para vencer el Covid-19</b>
+                    <div class="container" id="icons">
+                        <div class="row">
+                            <a rel=noopener target=_blank href="https://github.com/isis-code/Ayni"  class="github" title="github"><i class="demo-icon icon-github-circled-1">&#xe800;</i></a>
+                            <a target=_blank rel=noopener class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://isis-code.github.io/Ayni/" title="facebook"><i class="demo-icon icon-facebook">&#xf09a;</i></a>
+                            <!--<div class=""><i class="demo-icon icon-android">&#xf17b;</i></div>-->
+                            <a target=_blank rel=noopener class="whatsapp" href="https://wa.me/?text=*Autoevaluacion Coronavirus Covid-19*%0D%0A%0D%0AHaz el test ahora, súmate al reto de *QuedateEnCasa*:%0A%0D%0Ahttps://isis-code.github.io/Ayni/" title="whatsapp"><i class="demo-icon icon-whatsapp">&#xf232;</i></a>
+                            <!--<div class=""><i class="demo-icon icon-youtube">&#xf315;</i></div>-->
+                        </div>
+                    </div>   
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>
+
+<div class="paginas" id="test" >
+    <form action="" class="formulario" id="form" >
+        <div id="title-form">
+        <h1>Llena Todas las Preguntas<h1 id="ob-test">*</h1></h1>
+        </div>
+        <p>Pregunta 1:</p>
+        <h2>¿Tiene sensacion de falta de aire?</h2>
+        <div class="radio">
+            <input type="radio" name="p1" id="cs1">
+            <label for="cs1">Si</label>
+            <input type="radio" name="p1" id="no1">
+            <label for="no1">No</label>
+        </div>
+        <p>Pregunta 2:</p>
+        <h2>¿Tiene tiene fiebre? + 37 °C</h2>
+        <div class="radio">
+            <input type="radio" name="p2" id="cs2">
+            <label for="cs2">Si</label>
+            <input type="radio" name="p2" id="no2">
+            <label for="no2">No</label>
+        </div>
+        <p>Pregunta 3:</p>
+        <h2>¿Tiene tos seca persistente?</h2>
+        <div class="radio">
+            <input type="radio" name="p3" id="cs3">
+            <label for="cs3">Si</label>
+            <input type="radio" name="p3" id="no3">
+            <label for="no3">No</label>
+        </div>
+        <p>Pregunta 4:</p>
+        <h2>¿Tiene dolor de garganta?</h2>
+        <div class="radio">
+            <input type="radio" name="p4" id="cs4">
+            <label for="cs4">Si</label>
+            <input type="radio" name="p4" id="no4">
+            <label for="no4">No</label>
+        </div>
+        <p>Pregunta 5:</p>
+        <h2>¿tiene mucosidad en la nariz?</h2>
+        <div class="radio">
+            <input type="radio" name="p5" id="cs5">
+            <label for="cs5">Si</label>
+            <input type="radio" name="p5" id="no5">
+            <label for="no5">No</label>
+        </div>
+        <p>Pregunta 6:</p>
+        <h2>¿Has tenido contacto con algun paciente positivo confirmado?</h2>
+        <div class="radio">
+            <input type="radio" name="p6" id="cs6">
+            <label for="cs6">Si</label>
+            <input type="radio" name="p6" id="no6">
+            <label for="no6">No</label>
+        </div>
+        <p>Pregunta 7:</p>
+        <h2>¿Tiene dolor muscular?</h2>
+        <div class="radio">
+            <input type="radio" name="p7" id="cs7">
+            <label for="cs7">Si</label>
+            <input type="radio" name="p7" id="no7">
+            <label for="no7">No</label>
+        </div>
+        <p>Pregunta 8:</p>
+        <h2>¿Llevas mas de 20 dias con estos sintomas?</h2>
+        <div class="radio">
+            <input type="radio" name="p8" id="cs8">
+            <label for="cs8">Si</label>
+            <input type="radio" name="p8" id="no8">
+            <label for="no8">No</label>
+        </div>
+    <section class="btn-container ">
+        <a class="btn-ghost round" onclick="javascript:getData()">Enviar Datos</a>
+    </section>
+    </form>
+</div>
+
+<div class="paginas" id="compatible">
+        <div class="results">
+    <div v-if="filledInTest" class="main-container">
+      <h2>Resultados</h2>
+      <div id="comp-center">
+        <p>
+          Tus respuestas sugieren la posibilidad de tener sintomatología
+          compatible con COVID-19 según el algoritmo de coronamadrid.com.
+        </p>
+        <p>
+          Algunas recomendaciones si crees que tienes COVID-19:
+        </p>
+        <ul>
+          <li>
+            Observa tu evolución y si tus síntomas empeoran, sobre todo si
+            tienes dificultad respiratoria, ponte en contacto con el teléfono
+            designado por tu Comunidad para la atención sobre el COVID-19 o con
+            tu centro de salud.
+          </li>
+          <li>
+            Quédate en casa para evitar contagios.
+          </li>
+          <li>
+            Utiliza una mascarilla (continuamente y cambiándola cada 24 horas).
+          </li>
+          <li>
+            Si vives con otras personas, permanece en una habitación separada
+            con la puerta cerrada y utiliza un cuarto de baño propio si fuese
+            posible. Ventila la habitación evitando las corrientes hacia el
+            resto de la casa. No compartas vajilla, toallas ni sábanas.
+          </li>
+          <li>
+            Limpia las superficies y objetos con lejía o productos
+            desinfectantes.
+          </li>
+          <li>
+            Guarda la ropa sucia en una bolsa cerrada y lávala por separado a
+            60-90º.
+          </li>
+          <li>
+            Elimina tus residuos por separado utilizando un cubo con tapa.
+          </li>
+        </ul>
+        <p>
+          El COVID-19 se transmite por gotas que se expulsan al toser o
+          estornudar, por eso la higiene y evitar el contacto es vital para
+          reducir el contagio.
+        </p>
+      </div>
+         <section class="btn-container ">
+        <a class="btn-ghost round" href="" >Volver a realizar el test</a>
+     </section>
+        <br/><br/>
+    </div>
+    </div>
+</div>
+
+<div class="paginas" id="nocompatible">
+    <div class="results">
+    <div v-if="filledInTest" class="main-container">
+      <h2>Resultados</h2>
+    <div id="comp-center">
+        <p>
+          Tus respuestas sugieren que no tienes síntomas o no son suficientes
+          para determinar un contagio de COVID-19 según el algoritmo de
+          coronamadrid.com.
+        </p>
+        <p>
+          El COVID-19 se transmite por gotas que se expulsan al toser o
+          estornudar, por eso la higiene y evitar el contacto es vital para
+          reducir el contagio.
+        </p>
+    </div>
+    <section class="btn-container ">
+            <a class="btn-ghost round" href="">Volver a realizar el test</a>
+    </section>
+        <br/><br/>
+    </div>
+</div>
+</div>
+</body>
+</html>
